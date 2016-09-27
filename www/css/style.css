@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Thin.woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Thin Italic.woff');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Light.woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Light.woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Regular.woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Regular Italic.woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Bold.woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Mission Gothic';
+    src: url('Mission Gothic Bold Italic.woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Mission Gothic';
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Mission Gothic';
+    font-weight: 700;
+}
+p, li {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+
+.main-image {
+    width: 100%;
+    max-width: 251px;
+    display: block;
+    margin: 0 auto 2em;
+    text-align: center;
+}
+
+ion-content {
+    padding-top: 2em !important;
+}
+
+.warning-bar {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.5em;
+    line-height: 120%;
+}
+
+body, .ionic-body {
+    font-size: 16px;
+}
+
+.reg-ul {
+    list-style: disc;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.reg-ul li { 
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+}
+
+.main-buttons .button,
+.important-button {
+    margin: 0.5em 0;
+    font-size: 120%;
+    padding: 1em 0.5em;
+}
+
+.main-buttons .row {
+    padding: 0;
+}
+
+ion-nav-view ion-content {
+    background: url(../img/blue_man_faded.png) center bottom no-repeat white;
+    background-size: contain;
+}
+
+.platform-android .title {
+    text-align: center !important;
+}
+
+/* adjustment for smaller header */
+ion-header-bar {
+    height: 30px !important;
+}
+.title {
+    height: 29px !important;
+    line-height: 29px !important;
+    font-size: 13px !important;
+}
+ion-content.has-header {
+    top: 30px;
+}
+/* */
+
+.actionable-info .col {
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    margin: 1em;
+}
+
+#main-buttons-spacer {
+    width: 1em;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0;
+    -moz-box-flex: 0;
+    -moz-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+}
+
+@media (max-width: 567px) {
+    #main-buttons-spacer {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 0;
+    }
+
+    .actionable-info .col {
+        margin: 1em 0;
+    }
+}
