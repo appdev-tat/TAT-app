@@ -123,7 +123,12 @@ ion-header-bar {
 ion-content.has-header {
     top: 30px;
 }
+ion-content.has-header.has-tabs-top {
+    top: 79px;
+}
 /* */
+
+
 
 .actionable-info .col {
     border-radius: 6px;

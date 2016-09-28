@@ -57,7 +57,6 @@
     <icon src="www/res/icon/windows8/storelogo.png" platform="windows" width="50" height="50"/>
     <splash src="www/res/screen/windows8/splashscreen.png" platform="windows" width="620" height="300"/>
   </platform>
-  <access origin="*"/>
   <access origin="mailto:*" launch-external="yes" />
   <access origin="tel:*" launch-external="yes" />
   <allow-intent href="http://*/*"/>

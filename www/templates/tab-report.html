@@ -3,22 +3,20 @@
 
     <p class="warning-bar" style="text-align:left"><i class="icon ion-alert-circled"></i> When you report trafficking, those you contact will work with the FBI and local police to rescue the victims. Approaching traffickers is dangerous for you and their victims, and could lead to problems in the prosecution of the traffickers.</p>
 
+    <p><strong>If you are at a truck stop/travel plaza, please also notify the manager-on-duty of the suspicious activity&mdash;he/she can assist in ending the trafficking activity.</strong></p>
+
     <div class="main-buttons">
       <div class="row responsive-sm">
-        <a class="button button-block button-positive col" href="tel:+18883737888"><i class="icon ion-ios-telephone"></i> Call the hotline (USA)<br>(1-888-373-7888)</a>
+        <a class="button button-block button-positive col" ng-click="openExternalLink('tel:+18883737888')"><i class="icon ion-ios-telephone"></i> Call the hotline (USA)<br>(1-888-373-7888)</a>
         <div class="col" id="main-buttons-spacer"><!-- spacer --></div>
-        <a class="button button-block button-positive col" href="tel:+18882228477"><i class="icon ion-ios-telephone"></i> Call the hotline (Canada)<br>(1-888-222-TIPS)</a>
+        <a class="button button-block button-positive col" ng-click="openExternalLink('tel:+18882228477')"><i class="icon ion-ios-telephone"></i> Call the hotline (Canada)<br>(1-888-222-TIPS)</a>
       </div>
     </div>
 
-    <a class="button button-block button-positive important-button" href="mailto:Report@PolarisProject.org"><i class="icon ion-ios-email"></i> Send a report via email to<br>report@polarisproject.org</a>
-
-    <br>
-    <p><strong>If you are at a truck stop/travel plaza, please notify the manager-on-duty of the suspicious activity&mdash;he/she can assist in ending the trafficking activity.</strong></p>
-    <br>
+    <a class="button button-block button-positive important-button" ng-click="openExternalLink('mailto:Report@PolarisProject.org')"><i class="icon ion-ios-email"></i> Send a report via email to<br>report@polarisproject.org</a>
 
     <hr>
-    
+
     <h2>Actionable Information</h2>
     <p>Detailed information will greatly help the prosecution of traffickers. Try to report as much of the following info about the incident as you can.</p>
     <p><strong>Take photos if possible.</strong></p>
