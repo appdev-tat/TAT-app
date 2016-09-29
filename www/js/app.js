@@ -17,8 +17,10 @@ function onDeviceReady() {
     }, 'Notice', ['Continue', 'Do not show again'] );
 
   }
-}
 
+  // use the InAppBrowser plugin to make mailto and tel links work
+  window.open = cordova.InAppBrowser.open;
+}
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
