@@ -65,6 +65,21 @@ p, li {
     text-align: center;
 }
 
+.main-half {
+    float: left;
+    width: 50%;
+    flex: 1;
+    padding: 0 0.25em;
+    margin: auto;
+}
+
+.main-top {
+    background:white;
+    padding: 2em 0.5em 0;
+    border-bottom: 1px solid #666;
+    display: flex;
+}
+
 ion-content {
     padding-top: 2em !important;
 }
@@ -128,6 +143,24 @@ ion-content.has-header.has-tabs-top {
 }
 /* */
 
+/* color override */
+a {
+    color: #2e90d0;
+}
+
+.button.button-positive {
+    background-color: #2e90d0
+}
+.button.button-positive.active,
+.button.button-positive.activated {
+    background-color: #083b72;
+}
+
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated,
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+    color: #2e90d0;
+    border-color: #2e90d0;
+}
 
 
 .actionable-info .col {
