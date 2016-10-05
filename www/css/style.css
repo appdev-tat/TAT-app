@@ -75,13 +75,13 @@ p, li {
 
 .main-top {
     background:white;
-    padding: 2em 0.5em 0;
+    padding: 1em 0.5em 0;
     border-bottom: 1px solid #666;
     display: flex;
 }
 
 ion-content {
-    padding-top: 2em !important;
+    padding-top: 1em !important;
 }
 
 .warning-bar {
@@ -92,7 +92,7 @@ ion-content {
 }
 
 body, .ionic-body {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .reg-ul {
@@ -122,25 +122,27 @@ ion-nav-view ion-content {
     background-size: contain;
 }
 
-.platform-android .title {
-    text-align: center !important;
+.nav-bar-tabs-top {
+    display: none;
+}
+.tabs-top > .tabs {
+    top: 2px !important;
+}
+ion-content.has-header.has-tabs-top {
+    top: 52px !important;
 }
 
 /* adjustment for smaller header */
-ion-header-bar {
-    height: 30px !important;
+.platform-ios ion-header-bar {
+    height: 23px !important;
+}
+.platform-ios ion-content.has-header {
+    top: 23px !important;
 }
 .title {
-    height: 29px !important;
-    line-height: 29px !important;
-    font-size: 13px !important;
+    display: none !important;
 }
-ion-content.has-header {
-    top: 30px;
-}
-ion-content.has-header.has-tabs-top {
-    top: 79px;
-}
+
 /* */
 
 /* color override */

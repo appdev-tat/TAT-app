@@ -27,9 +27,9 @@ function onDeviceReady() {
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -42,6 +42,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+    /* // failed attempt to prevent the app from 'remembering' how far I scrolled on a page when I switch out then switch back.
+    $rootScope.$on("$locationChangeSuccess", function(event, next, current) { 
+        var scrolls  = document.querySelectorAll('.scroll');
+        scrolls.forEach( function(content) { content.style.transform = 'translate3d(0px, 0px, 0px) scale(1)'; });
+    });
+    */
   });
 })
 
@@ -104,5 +111,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/main');
+
 
 });
