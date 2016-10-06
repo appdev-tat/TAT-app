@@ -111,6 +111,10 @@ body, .ionic-body {
     margin: 0.5em 0;
     font-size: 120%;
     padding: 1em 0.5em;
+    line-height: 26px;
+}
+.main-buttons .button .icon:before {
+    line-height: 22px;
 }
 
 .main-buttons .row {
@@ -143,11 +147,32 @@ ion-content.has-header.has-tabs-top {
     display: none !important;
 }
 
+h3.page-title, h3.section-title {
+    text-align: center;
+    background: #555;
+    color: white;
+    padding: 0.25em;
+    font-weight: 300;
+}
+h3.page-title {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -14px !important;
+}
 /* */
 
 /* color override */
 a {
     color: #2e90d0;
+}
+
+p em {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.scroll > p:last-child {
+    padding-bottom: 2em;
 }
 
 .button.button-positive {
