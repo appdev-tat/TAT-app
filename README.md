@@ -2,30 +2,72 @@
 
 An app for Truckers Against Trafficking, built with [PhoneGap](http://phonegap.com/) and [Ionic](http://ionicframework.com/).
 
+PhoneGap apps are essentially just websites that run as a native app, so all you need is a little web design knowhow.
+
 ## Developing instructions
 
 ### Setting up a dev environment
 
-Use git to clone the repo to a directory of your choice:
+##### Step 1
+
+Use git (either the [command line utility](https://git-scm.com/) or the [github desktop app](https://desktop.github.com/)) to clone the repo to a directory of your choice.
+
+If you use the command line utility:
+
 ```sh
-$ git clone https://github.com/ransoing/TAT-app.git
+$ cd some/directory/
+$ git clone https://github.com/appdev-tat/TAT-app.git
 ```
+
+##### Step 2
+
+Download the PhoneGap desktop app and the PhoneGap developer app for mobile devices. See the [PhoneGap](http://phonegap.com/) website for details.
+
+##### Step 3
+
+Run the PhoneGap desktop app and open the TAT-app project folder. Click the `>` button to start the server.
+
+##### Step 4
+
+Click the IP address at the bottom of the PhoneGap desktop app. This opens up a browser window to display the app. When you make changes to the project files, the browser should automatically refresh to show the changes.
+
+You can also preview the app on a mobile device by running the PhoneGap mobile app. Enter the IP address shown on the desktop app when prompted. Just like the browser on your computer, your mobile device should automatically refresh in response to changes in the project files.
+
+##### Step 5, optional advanced dev environment
 
 Install [Node.js](https://nodejs.org/en/).
 
 In a terminal or command console, navigate to the repo directory and run:
+
 ```sh
 $ npm install -g phonegap
 $ npm install -g ionic
 $ npm install
 ```
 
-PhoneGap apps are essentially just websites that run as a native app, so you can develop like you would for a regular website. Ionic has a nifty tool to let you see what the app looks like on both iOS and Android simultaneously. In a console, in the project directory, run:
+Both the phonegap and ionic command line tools have rather nifty features. Ionic has a tool to let you see what the app looks like on both iOS and Android simultaneously. In a console, in the project directory, run:
+
 ```sh
 $ ionic serve --lab
 ```
 
-To easily test the app on a real device, download the PhoneGap desktop app and the PhoneGap developer app for mobile devices. See the [PhoneGap](http://phonegap.com/) website for details on how to make this magic work.
+### Project layout
+
+For simple edits, you only need to worry about the files here:
+
+```sh
+[project-dir]/www/templates/
+```
+
+Each file in that directory represents a different "page" in the app, with the exception of `tabs.html`.
+
+Be aware that apps made with Ionic also use the [Angular framework](https://angularjs.org/).
+
+##### Notes for beginners
+
+Edit the files using any text editor, for example, Notepad. If you want to use something much better, install [Visual Studio Code](https://code.visualstudio.com).
+
+Here's a basic [HTML tutorial](http://www.w3schools.com/html/). Some of it does not apply to this app. For anything beyond what the tutorial covers, get assistance from a web developer.
 
 ### Building the app
 
