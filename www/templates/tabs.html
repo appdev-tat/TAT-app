@@ -25,5 +25,10 @@ navigation history that also transitions its views in and out.
     <ion-nav-view name="tab-about-trafficking"></ion-nav-view>
   </ion-tab>
 
+  <!-- the icon for this tab is hidden via CSS. CSS hides the last tab in this tab navigation, so additional tabs should be added before this one -->
+  <ion-tab title="About" icon-off="ion-ios-information-outline" icon-on="ion-ios-information" href="#/tab/about-app">
+    <ion-nav-view name="tab-about-app"></ion-nav-view>
+  </ion-tab>
+
 
 </ion-tabs>

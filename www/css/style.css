@@ -206,6 +206,9 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
     flex: 0;
 }
 
+/* Hide last tab */
+.tab-nav .tab-item:last-child { display: none }
+
 @media (max-width: 567px) {
     #main-buttons-spacer {
         display: none;
