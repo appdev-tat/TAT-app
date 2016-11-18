@@ -1,7 +1,7 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="org.truckersagainsttrafficking.mobile" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="sherprog.walletcards.tat" version="2.0.0">
   <name>Truckers Against Trafficking</name>
   <description>Make the call, save lives. Use this simple app to help you identify and report instances of human trafficking.</description>
-  <author href="http://www.truckersagainsttrafficking.org/" email="ransoing@gmail.com">Truckers Against Trafficking</author>
+  <author href="http://www.truckersagainsttrafficking.org/" email="tat.truckers@gmail.com">Truckers Against Trafficking</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
