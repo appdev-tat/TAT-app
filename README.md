@@ -73,6 +73,10 @@ Here's a basic [HTML tutorial](http://www.w3schools.com/html/). Some of it does 
 
 When you're happy with the changes you've made to the app, use git to commit and push your changes to github. Then log into [PhoneGap Build](https://build.phonegap.com/), and tell it to update from github and rebuild the app.
 
+The `master` branch assumes that Android is the target platform. The `master-ios` branch has an altered `config.xml` file and is suitable for deployment to iOS devices.
+
 ## Other things to note
 
 I think Ionic has a built-in way to generate all the necessary icon sizes automatically, but I used [http://pgicons.abiro.com/](http://pgicons.abiro.com/). If you need to make changes to the app icon, use this tool to generate files that match the filenames of the current icons.
+
+When you deploy changes, you should merge those changes into the `master-ios` branch as well. The only difference between `master` and `master-ios` should be the `config.xml` file.
