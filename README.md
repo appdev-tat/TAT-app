@@ -71,9 +71,7 @@ Here's a basic [HTML tutorial](http://www.w3schools.com/html/). Some of it does 
 
 ### Building the app
 
-When you're happy with the changes you've made to the app, use git to commit and push your changes to github. Then log into [PhoneGap Build](https://build.phonegap.com/), and tell it to update from github and rebuild the app.
-
-The `master` branch assumes that Android is the target platform. The `master-ios` branch has an altered `config.xml` file and is suitable for deployment to iOS devices.
+When you're happy with the changes you've made to the app, use git to commit and push your changes to github. Then log into [PhoneGap Build](https://build.phonegap.com/), and check the settings of the app (https://build.phonegap.com/apps/2280095/settings). If you're building for iOS, it should be pulling from the `master-ios` branch. If you're building for Android, it should be pulling from the `master` branch.
 
 ## Other things to note
 
