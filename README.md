@@ -71,7 +71,30 @@ Here's a basic [HTML tutorial](http://www.w3schools.com/html/). Some of it does 
 
 ### Building the app
 
-When you're happy with the changes you've made to the app, use git to commit and push your changes to github. Then log into [PhoneGap Build](https://build.phonegap.com/), and check the settings of the app (https://build.phonegap.com/apps/2280095/settings). If you're building for iOS, it should be pulling from the `master-ios` branch. If you're building for Android, it should be pulling from the `master` branch.
+When you're happy with the changes you've made to the app, increment the version number in config.xml (each update in the app store must use a different version number) and use git to commit to the master branch and push your changes to github.
+
+Then merge the `master` branch into the `master-ios` branch. As of this writing, the only difference between the two repos is the `config.xml` file. The master branch is used for Android deployments and the master-ios branch is used for iOS deployments.
+
+Log into [PhoneGap Build](https://build.phonegap.com/) with the username `appdev@truckersagainsttrafficking.org` and check the settings of the app (https://build.phonegap.com/apps/2498603/settings) to ensure that you're building from the branch that corresponds to the platform you wish to build for. In order to build an .ipa for testing or for release, or to build an .apk for release, you will need to unlock and use a "key".
+
+For iOS:
+* For testing: use the "Basic app ad hoc" key.
+* For release to the app store: use the "Basic app distribution" key.
+
+For Android:
+* For release to the Google Play store: use the "Android app release" key.
+
+The keys require a password in order to unlock and use. If you know the credentials for the "appdev" gmail account, then you can probably guess the password to unlock the iOS keys. For the password which unlocks the Android key, contact the Sheridan Programmers Guild.
+
+If these keys do not exist, or if you need to add additional approved devices to the provisioning profile for the iOS ad-hoc key, you will need to re-create the keys. Keys can be created at the [Edit Account screen](https://build.phonegap.com/people/edit). You will need access to the .p12 certificate files in order to do this. See Google Drive for the `appdev@truckersagainsttrafficking` account for details.
+
+#### Testing the app on Android
+
+After building the app, scan the QR code on the PhoneGap webpage.
+
+#### Testing the app on iOS
+
+After building the app using the ad hoc key, you may be able to just scan the QR code using a device which is approved in the provisioning profile. If this doesn't work, download the .ipa and go to [Diawi](https://www.diawi.com/) and follow the instructions.
 
 ## Other things to note
 
