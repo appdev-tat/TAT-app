@@ -1,6 +1,6 @@
 {
   "name": "truckers-against-trafficking-app",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Mobile app for Truckers Against Trafficking",
   "dependencies": {
     "gulp": "^3.5.6",
