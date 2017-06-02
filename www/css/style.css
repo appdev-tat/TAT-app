@@ -196,7 +196,7 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
     margin: 1em;
 }
 
-#main-buttons-spacer {
+.main-buttons-spacer {
     width: 1em;
     -webkit-box-flex: 0;
     -webkit-flex: 0;
@@ -210,7 +210,7 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
 .tab-nav .tab-item:last-child { display: none }
 
 @media (max-width: 567px) {
-    #main-buttons-spacer {
+    .responsive-sm .main-buttons-spacer {
         display: none;
         margin: 0;
         padding: 0;
@@ -219,5 +219,14 @@ ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-col
 
     .actionable-info .col {
         margin: 1em 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive-md .main-buttons-spacer {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 0;
     }
 }
